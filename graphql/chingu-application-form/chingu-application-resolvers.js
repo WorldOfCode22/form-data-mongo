@@ -46,5 +46,16 @@ module.exports = {
         throw new Error('Unexpected Error')
       }
     )
+  },
+  getChinguApplicationForm: (_, args, {models: {ChinguApplicationForm}}) => {
+    const userId = 8 // placeholder will in the future be gotten from context
+    return ChinguApplicationForm.findOne({userId})
+      .then(
+        (doc) => { return doc },
+        err => {
+          console.log(err)
+          throw new Error('Unexpected Error')
+        }
+      )
   }
 }
