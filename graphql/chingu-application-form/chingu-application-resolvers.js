@@ -47,8 +47,7 @@ module.exports = {
       }
     )
   },
-  getChinguApplicationForm: (_, args, {models: {ChinguApplicationForm}}) => {
-    const userId = 8 // placeholder will in the future be gotten from context
+  getChinguApplicationForm: (_, {userId}, {models: {ChinguApplicationForm}}) => {
     return ChinguApplicationForm.findOne({userId})
       .then(
         (doc) => { return doc },

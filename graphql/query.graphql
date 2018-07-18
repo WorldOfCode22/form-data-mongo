@@ -1,4 +1,4 @@
 # import * from './chingu-application-form/chingu-application-form.graphql'
 type Query {
-  getChinguApplicationForm: ChinguApplicationForm
+  getChinguApplicationForm(userId: Int): ChinguApplicationForm
 }
