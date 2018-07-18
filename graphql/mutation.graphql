@@ -1,0 +1,5 @@
+# import * from './chingu-application-form/chingu-application-input.graphql'
+# import * from './chingu-application-form/chingu-application-form.graphql'
+type Mutation {
+  submitChinguApplicationForm(input: ChinguApplicationInput): ChinguApplicationForm!
+}

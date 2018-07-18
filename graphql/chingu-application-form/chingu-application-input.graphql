@@ -1,0 +1,5 @@
+# import * from './chingu-excitment-enum.graphql'
+input ChinguApplicationInput {
+  excitingAboutChingu: [ChinguExcitmentEnum]
+  valueOfChinguToUser: String
+}

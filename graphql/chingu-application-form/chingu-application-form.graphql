@@ -1,0 +1,4 @@
+type ChinguApplicationForm {
+  excitingAboutChingu: [String],
+  valueOfChinguToUser: String
+}
